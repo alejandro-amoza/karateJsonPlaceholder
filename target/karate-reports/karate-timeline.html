@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"comments[1:6]","start":1753830307076,"end":1753830307132,"title":"comments[1:6] 20:05:07.076-20:05:07.132 Obtener todos los posts"},{"id":2,"group":1,"content":"comments[2:12]","start":1753830307150,"end":1753830307352,"title":"comments[2:12] 20:05:07.150-20:05:07.352 Obtener un post específico"},{"id":3,"group":1,"content":"comments[3:18]","start":1753830307364,"end":1753830307873,"title":"comments[3:18] 20:05:07.364-20:05:07.873 Crear un nuevo post"},{"id":4,"group":1,"content":"photos[1:6]","start":1753830308053,"end":1753830308104,"title":"photos[1:6] 20:05:08.053-20:05:08.104 Obtener todos los posts"},{"id":5,"group":1,"content":"photos[2:12]","start":1753830308112,"end":1753830308159,"title":"photos[2:12] 20:05:08.112-20:05:08.159 Obtener un post específico"},{"id":6,"group":1,"content":"photos[3:18]","start":1753830308168,"end":1753830308358,"title":"photos[3:18] 20:05:08.168-20:05:08.358 Crear un nuevo post"},{"id":7,"group":1,"content":"posts[1:6]","start":1753830304728,"end":1753830305531,"title":"posts[1:6] 20:05:04.728-20:05:05.531 Obtener todos los posts"},{"id":8,"group":1,"content":"posts[2:12]","start":1753830305543,"end":1753830305631,"title":"posts[2:12] 20:05:05.543-20:05:05.631 Obtener un post específico"},{"id":9,"group":1,"content":"posts[3:18]","start":1753830305637,"end":1753830306167,"title":"posts[3:18] 20:05:05.637-20:05:06.167 Crear un nuevo post"},{"id":10,"group":1,"content":"users[1:6]","start":1753830306819,"end":1753830306880,"title":"users[1:6] 20:05:06.819-20:05:06.880 Obtener todos los usuarios"},{"id":11,"group":1,"content":"users[2:12]","start":1753830306891,"end":1753830306983,"title":"users[2:12] 20:05:06.891-20:05:06.983 Obtener usuario por ID"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
