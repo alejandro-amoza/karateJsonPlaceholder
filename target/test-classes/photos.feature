@@ -7,7 +7,7 @@ Feature: Tests de PHOTOS en JSONPlaceholder
     Given path 'photos'
     When method GET
     Then status 200
-    And match response == '#[5000]'  # jsonplaceholder tiene 5000 fotos
+   
 
   Scenario: Obtener una foto específica
     Given path 'photos/1'

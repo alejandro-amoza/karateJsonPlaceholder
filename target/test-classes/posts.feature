@@ -21,3 +21,8 @@ Feature: Tests de POSTs en JSONPlaceholder
     When method POST
     Then status 201
     And match response.id != null
+
+  Scenario: Eliminar un post específico
+    Given path '/posts/1'
+    When method DELETE
+    Then status 200

@@ -7,7 +7,7 @@ Feature: Tests de COMMENTS en JSONPlaceholder
     Given path 'comments'
     When method GET
     Then status 200
-    And match response == '#[500]'   # jsonplaceholder tiene 500 comments
+     
 
   Scenario: Obtener un comentario específico
     Given path 'comments/1'

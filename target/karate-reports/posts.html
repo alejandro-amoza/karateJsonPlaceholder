@@ -38,7 +38,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-pass" class="bg-success">4</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-07-29 08:05:06 p. m.</div>
+    <div>2025-07-29 08:44:36 p. m.</div>
   </div>
 </div>
 
@@ -62,6 +62,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           </div>
           <div class="nav-item passed">
             <a href="#[3:18]"><span>[3:18]</span> <span>Crear un nuevo post</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:25]"><span>[4:25]</span> <span>Eliminar un post específico</span></a>
           </div>
         </div>
       </div>
@@ -87,7 +90,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>659</span>
+              <span>ms:</span>&nbsp;<span>680</span>
             </div>
           </div>
           <div class="step-row">
@@ -110,7 +113,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url baseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -138,7 +141,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;/posts&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -166,7 +169,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">623</div>
+    <div class="time-cell passed">646</div>
   </div>
 
    
@@ -175,7 +178,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">20:05:05.116 request:
+  <div class="preformatted" data-parent="0.8">20:44:35.020 request:
 1 &gt; GET https://jsonplaceholder.typicode.com/posts
 1 &gt; Host: jsonplaceholder.typicode.com
 1 &gt; Connection: Keep-Alive
@@ -183,9 +186,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-20:05:05.459 response time in milliseconds: 333
+20:44:35.352 response time in milliseconds: 324
 1 &lt; 200
-1 &lt; Date: Tue, 29 Jul 2025 23:05:04 GMT
+1 &lt; Date: Tue, 29 Jul 2025 23:44:34 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -205,11 +208,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Ratelimit-Limit: 1000
 1 &lt; X-Ratelimit-Remaining: 999
 1 &lt; X-Ratelimit-Reset: 1753059523
-1 &lt; Age: 10114
+1 &lt; Age: 12484
 1 &lt; Cf-Cache-Status: HIT
 1 &lt; Server-Timing: cfCacheStatus;desc=&quot;HIT&quot;
 1 &lt; Server-Timing: cfEdge;dur=4,cfOrigin;dur=0
-1 &lt; CF-RAY: 9670424d488db27d-EZE
+1 &lt; CF-RAY: 96707c293a381d14-EZE
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
 [
   {
@@ -861,7 +864,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response == &#39;#[100]&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">34</div>
+    <div class="time-cell passed">32</div>
   </div>
 
    
@@ -890,7 +893,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>87</span>
+              <span>ms:</span>&nbsp;<span>86</span>
             </div>
           </div>
           <div class="step-row">
@@ -941,7 +944,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;/posts/1&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -969,7 +972,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">57</div>
+    <div class="time-cell passed">52</div>
   </div>
 
    
@@ -978,7 +981,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.14">20:05:05.548 request:
+  <div class="preformatted" data-parent="0.14">20:44:35.439 request:
 1 &gt; GET https://jsonplaceholder.typicode.com/posts/1
 1 &gt; Host: jsonplaceholder.typicode.com
 1 &gt; Connection: Keep-Alive
@@ -986,9 +989,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-20:05:05.602 response time in milliseconds: 52
+20:44:35.487 response time in milliseconds: 46
 1 &lt; 200
-1 &lt; Date: Tue, 29 Jul 2025 23:05:05 GMT
+1 &lt; Date: Tue, 29 Jul 2025 23:44:34 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1008,11 +1011,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Ratelimit-Limit: 1000
 1 &lt; X-Ratelimit-Remaining: 999
 1 &lt; X-Ratelimit-Reset: 1753797052
-1 &lt; Age: 4361
+1 &lt; Age: 6731
 1 &lt; Cf-Cache-Status: HIT
 1 &lt; Server-Timing: cfCacheStatus;desc=&quot;HIT&quot;
-1 &lt; Server-Timing: cfEdge;dur=6,cfOrigin;dur=0
-1 &lt; CF-RAY: 9670424e5c196ccb-EZE
+1 &lt; Server-Timing: cfEdge;dur=5,cfOrigin;dur=0
+1 &lt; CF-RAY: 96707c2a4b0bc772-EZE
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
 {
   &quot;userId&quot;: 1,
@@ -1068,7 +1071,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.title != null</span>
       </div>
     </div>
-    <div class="time-cell passed">28</div>
+    <div class="time-cell passed">32</div>
   </div>
 
    
@@ -1097,7 +1100,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>530</span>
+              <span>ms:</span>&nbsp;<span>270</span>
             </div>
           </div>
           <div class="step-row">
@@ -1176,7 +1179,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { userId: 1, title: &#39;Post Karate&#39;, body: &#39;Este es un test&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1204,7 +1207,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">526</div>
+    <div class="time-cell passed">265</div>
   </div>
 
    
@@ -1213,7 +1216,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.21">20:05:05.690 request:
+  <div class="preformatted" data-parent="0.21">20:44:35.577 request:
 1 &gt; POST https://jsonplaceholder.typicode.com/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 59
@@ -1223,9 +1226,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;userId&quot;:1,&quot;title&quot;:&quot;Post Karate&quot;,&quot;body&quot;:&quot;Este es un test&quot;}
 
-20:05:06.162 response time in milliseconds: 471
+20:44:35.797 response time in milliseconds: 216
 1 &lt; 201
-1 &lt; Date: Tue, 29 Jul 2025 23:05:05 GMT
+1 &lt; Date: Tue, 29 Jul 2025 23:44:35 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 85
 1 &lt; Connection: keep-alive
@@ -1237,8 +1240,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Location: https://jsonplaceholder.typicode.com/posts/101
 1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
 1 &lt; Pragma: no-cache
-1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=k9DzBdFtndhCmHHBV836GFEjGkRApuPdDAA8%2FWVbGrg%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1753830305&quot;}],&quot;max_age&quot;:3600}
-1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=k9DzBdFtndhCmHHBV836GFEjGkRApuPdDAA8%2FWVbGrg%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1753830305&quot;
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=j8VEi3fug6ZhDBCOHfusccPP91vr5YyzLqa1eYv2l4M%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1753832675&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=j8VEi3fug6ZhDBCOHfusccPP91vr5YyzLqa1eYv2l4M%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1753832675&quot;
 1 &lt; Server: cloudflare
 1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 &lt; Via: 2.0 heroku-router
@@ -1246,11 +1249,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Powered-By: Express
 1 &lt; X-Ratelimit-Limit: 1000
 1 &lt; X-Ratelimit-Remaining: 999
-1 &lt; X-Ratelimit-Reset: 1753830366
+1 &lt; X-Ratelimit-Reset: 1753832706
 1 &lt; Cf-Cache-Status: DYNAMIC
 1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
-1 &lt; Server-Timing: cfEdge;dur=5,cfOrigin;dur=426
-1 &lt; CF-RAY: 9670424f2c51f1ca-EZE
+1 &lt; Server-Timing: cfEdge;dur=8,cfOrigin;dur=142
+1 &lt; CF-RAY: 96707c2b4ea94c58-EZE
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
 {
   &quot;userId&quot;: 1,
@@ -1306,7 +1309,180 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.id != null</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:25]</span>
+                <span class="scenario-name">Eliminar un post específico</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>191</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/posts/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">190</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">20:44:35.824 request:
+1 &gt; DELETE https://jsonplaceholder.typicode.com/posts/1
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.16)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:44:36.008 response time in milliseconds: 184
+1 &lt; 200
+1 &lt; Date: Tue, 29 Jul 2025 23:44:35 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+1 &lt; Expires: -1
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=j8VEi3fug6ZhDBCOHfusccPP91vr5YyzLqa1eYv2l4M%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1753832675&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=j8VEi3fug6ZhDBCOHfusccPP91vr5YyzLqa1eYv2l4M%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1753832675&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 2.0 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 998
+1 &lt; X-Ratelimit-Reset: 1753832706
+1 &lt; Cf-Cache-Status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=4,cfOrigin;dur=142
+1 &lt; CF-RAY: 96707c2ca833ccba-EZE
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
