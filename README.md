@@ -8,7 +8,7 @@ Este proyecto contiene una colección de pruebas automatizadas utilizando **Kara
 
 Se testean las siguientes funcionalidades de la API:
 
-- Listado, creación y consulta de posts (`GET /posts`, `POST /posts`)
+- Listado, creación, consulta y eliminación de posts (`GET /posts`, `POST /posts`, `DELETE /posts`)
 - Acceso a usuarios (`GET /users`)
 - Gestión de comentarios (`GET /comments`, `POST /comments`)
 - Acceso a fotos (`GET /photos`, `POST /photos`)
